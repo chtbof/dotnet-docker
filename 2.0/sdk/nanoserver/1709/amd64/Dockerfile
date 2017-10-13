@@ -19,6 +19,7 @@ RUN Invoke-WebRequest $Env:DOTNET_SDK_DOWNLOAD_URL -OutFile dotnet.zip; `
     Expand-Archive dotnet.zip -DestinationPath dotnet; `
     Remove-Item -Force dotnet.zip
 
+
 # SDK image
 FROM microsoft/nanoserver:1709
 
