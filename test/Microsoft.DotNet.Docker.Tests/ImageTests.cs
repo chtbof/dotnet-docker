@@ -14,6 +14,7 @@ namespace Microsoft.DotNet.Docker.Tests
     public class ImageTests
     {
         private static string ArchFilter => Environment.GetEnvironmentVariable("IMAGE_ARCH_FILTER");
+        private static string OsFilter => Environment.GetEnvironmentVariable("IMAGE_OS_FILTER");
         private static string VersionFilter => Environment.GetEnvironmentVariable("IMAGE_VERSION_FILTER");
 
         private DockerHelper DockerHelper { get; set; }
@@ -46,6 +47,13 @@ namespace Microsoft.DotNet.Docker.Tests
                         },
                     });
             }
+            else
+            {
+                testData.AddRange(new List<ImageDescriptor>
+                    {
+                        new ImageDescriptor {DotNetCoreVersion = "2.0", OsVariant = "nanoserver-1709"},
+                    });
+            }
 
             string versionFilterPattern = null;
             if (VersionFilter != null)
@@ -57,6 +65,8 @@ namespace Microsoft.DotNet.Docker.Tests
             return testData
                 .Where(imageDescriptor => ArchFilter == null
                     || string.Equals(imageDescriptor.Architecture, ArchFilter, StringComparison.OrdinalIgnoreCase))
+                .Where(imageDescriptor => OsFilter == null
+                    || (imageDescriptor.OsVariant?.StartsWith(OsFilter) ?? false))
                 .Where(imageDescriptor => VersionFilter == null
                     || Regex.IsMatch(imageDescriptor.DotNetCoreVersion, versionFilterPattern, RegexOptions.IgnoreCase))
                 .Select(imageDescriptor => new object[] { imageDescriptor });
