@@ -250,11 +250,11 @@
   "processParameters": {},
   "quality": "definition",
   "queue": {
-    "id": 832,
-    "name": "DotNetCore-Infra",
+    "id": 330,
+    "name": "DotNetCore-Build",
     "pool": {
-      "id": 135,
-      "name": "DotNetCore-Infra"
+      "id": 97,
+      "name": "DotNetCore-Build"
     }
   },
   "id": 6216,
