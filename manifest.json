@@ -265,13 +265,10 @@
               "variant": "armv7"
             },
             {
-              "dockerfile": "2.0/runtime/nanoserver/14393/amd64",
+              "dockerfile": "2.0/runtime/nanoserver/amd64",
               "os": "windows",
               "tags": {
-                "2.0.0-runtime-nanoserver-14393": {},
-                "2.0.0-runtime-nanoserver": {
-                  "isUndocumented": true
-                },
+                "2.0.0-runtime-nanoserver": {},
                 "2.0.0-runtime-nanoserver-$(nanoServerVersion)": {
                   "isUndocumented": true
                 },
@@ -284,7 +281,7 @@
               }
             },
             {
-              "dockerfile": "2.0/runtime/nanoserver/1709/amd64",
+              "dockerfile": "2.0/runtime/nanoserver-1709/amd64",
               "os": "windows",
               "tags": {
                 "2.0.0-runtime-nanoserver-1709": {}
@@ -310,13 +307,10 @@
               }
             },
             {
-              "dockerfile": "2.0/sdk/nanoserver/14393/amd64",
+              "dockerfile": "2.0/sdk/nanoserver/amd64",
               "os": "windows",
               "tags": {
-                "2.0.0-sdk-2.0.2-nanoserver-14393": {},
-                "2.0.0-sdk-2.0.2-nanoserver": {
-                  "isUndocumented": true
-                },
+                "2.0.0-sdk-2.0.2-nanoserver": {},
                 "2.0.0-sdk-2.0.2-nanoserver-$(nanoServerVersion)": {
                   "isUndocumented": true
                 },
@@ -335,7 +329,7 @@
               }
             },
             {
-              "dockerfile": "2.0/sdk/nanoserver/1709/amd64",
+              "dockerfile": "2.0/sdk/nanoserver-1709/amd64",
               "os": "windows",
               "tags": {
                 "2.0.0-sdk-nanoserver-1709": {}

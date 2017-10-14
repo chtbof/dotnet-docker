@@ -204,7 +204,7 @@
     }
   },
   "demands": [
-    "Agent.OS -equals Windows_NT"
+    "VSTS_OS -equals Windows_Server_2016_Data_Center_RS3"
   ],
   "retentionRules": [
     {
@@ -258,7 +258,7 @@
     }
   },
   "id": 6216,
-  "name": "dotnet-docker-windows-amd64-images",
+  "name": "dotnet-docker-windows-1709-amd64-images",
   "url": "https://devdiv.visualstudio.com/0bdbc590-a062-4c3f-b0f6-9383f67865ee/_apis/build/Definitions/6216",
   "path": "\\",
   "type": "build",
