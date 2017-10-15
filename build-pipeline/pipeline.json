@@ -17,14 +17,14 @@
           "Name": "dotnet-docker-linux-amd64-images",
           "Parameters": {
             "PB.image-builder.path": "1.*",
-            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test --dry-run"
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test"
           }
         },
         {
           "Name": "dotnet-docker-linux-amd64-images",
           "Parameters": {
             "PB.image-builder.path": "2.*",
-            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test --dry-run"
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test"
           }
         }
       ]
@@ -39,7 +39,7 @@
           "Name": "dotnet-docker-linux-arm32v7-images",
           "Parameters": {
             "PB.image-builder.path": "2.*",
-            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test --dry-run"
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test"
           }
         }
       ]
@@ -54,14 +54,14 @@
           "Name": "dotnet-docker-windows-amd64-images",
           "Parameters": {
             "PB.image-builder.path": "1.*",
-            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test --dry-run"
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test"
           }
         },
         {
           "Name": "dotnet-docker-windows-amd64-images",
           "Parameters": {
             "PB.image-builder.path": "2.0*/nanoserver/*",
-            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test --dry-run"
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test"
           }
         }
       ]
@@ -76,7 +76,7 @@
           "Name": "dotnet-docker-windows-1709-amd64-images",
           "Parameters": {
             "PB.image-builder.path": "2.0*nanoserver-1709*",
-            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-pulling --skip-test --dry-run"
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-pulling --skip-test"
           }
         }
       ]
@@ -91,7 +91,7 @@
           "Name": "dotnet-docker-post-image-build",
           "Parameters": {
             "PB.image-builder.path": "2.0*nanoserver-1709*",
-            "PB.image-builder.customCommonArgs": "--repo-owner msimons --dry-run"
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons"
           }
         }
       ],
