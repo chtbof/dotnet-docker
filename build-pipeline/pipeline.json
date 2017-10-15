@@ -73,7 +73,7 @@
       },
       "Definitions": [
         {
-          "Name": "dotnet-docker-windows-amd64-images",
+          "Name": "dotnet-docker-windows-1709-amd64-images",
           "Parameters": {
             "PB.image-builder.path": "2.0*nanoserver-1709*",
             "PB.image-builder.customCommonArgs": "--repo-owner msimons --skip-test --dry-run"
@@ -88,7 +88,11 @@
       },
       "Definitions": [
         {
-          "Name": "dotnet-docker-post-image-build"
+          "Name": "dotnet-docker-post-image-build",
+          "Parameters": {
+            "PB.image-builder.path": "2.0*nanoserver-1709*",
+            "PB.image-builder.customCommonArgs": "--repo-owner msimons --dry-run"
+          }
         }
       ],
       "DependsOn": [
